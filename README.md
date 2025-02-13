@@ -15,9 +15,20 @@ Este repositório contém notebooks para análise e consolidação de dados de p
 │── 📂 notebooks/
 │   ├── Analise 2019-2024.ipynb   # Notebook para análise dos dados extraídos
 │   ├── Consolidacao_dados_19_24.ipynb  # Notebook para consolidação dos dados
+│   │── analise_politica.ipynb  # Notebook para analise de dados
 │── .gitignore                    # Arquivo para ignorar arquivos desnecessários
 │── README.md                     # Documentação do projeto
 ```
+## 📊 Bases de Dados
+
+Os arquivos de dados utilizados neste projeto estão disponíveis na pasta [`dados/`](./dados/):
+
+- **politicas.xlsx** - Base contendo as políticas analisadas.
+- **consolidado_politicas.csv** - Arquivo consolidado com informações sobre as políticas.
+- **politicas-base-organizada.csv** - Base qualitativa com detalhes adicionais das políticas.
+- **arquivos dos PLOAS.pdf** ( consultar e gerar no SIOP)
+
+⚠️ **Os arquivos de saída gerados pelos notebooks (`resultado_YYYY.csv`, `consolidado_politicas_atualizado.csv`) não estão no repositório**, pois podem ser gerados ao rodar os notebooks.
 
 ## 🚀 Como Usar
 
@@ -41,6 +52,12 @@ Após extrair os dados dos PDFs, abra o notebook para consolidar os resultados:
 ```bash
 jupyter notebook notebooks/Consolidacao_dados_19_24.ipynb
 ```
+#### **Consolidar os Dados**
+Após consolidação, analisar dados.
+```bash
+jupyter notebook notebooks/analise_politica.ipynb
+
+`````````
 
 ## 🛑 .gitignore
 O arquivo `.gitignore` evita que arquivos temporários ou grandes sejam adicionados ao repositório:
